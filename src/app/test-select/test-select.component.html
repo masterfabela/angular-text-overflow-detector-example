@@ -1,0 +1,14 @@
+<mat-form-field appearance="none">
+  <mat-select
+    placeholder="test"
+    [(value)]="opcionSeleccionada.id"
+  >
+    <mat-option
+      *ngFor="let opcion of opcionesSelect"
+      [value]="opcion.id"
+    >{{
+      opcion.nombre
+    }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
